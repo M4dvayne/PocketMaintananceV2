@@ -12,11 +12,6 @@ import SwiftUI
 class DataManager {
     static let shared = DataManager()
     
-    @AppStorage("userCar") private var userCar: Data?
-    
-    func saveUser(user: User) {
-        userCar = try? JSONEncoder().encode(user)
-    }
     
     let audi = "Audi"
     let bmw = "BMW"

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23A08795285FDE9C00AEB37C /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A08794285FDE9C00AEB37C /* NoteView.swift */; };
+		23A087B8286535FF00AEB37C /* LifeHackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A087B7286535FF00AEB37C /* LifeHackView.swift */; };
+		23A087BE2866730600AEB37C /* CheckBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A087BD2866730600AEB37C /* CheckBoxesView.swift */; };
+		23A087C02866738B00AEB37C /* ScrollableMileageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A087BF2866738B00AEB37C /* ScrollableMileageView.swift */; };
+		23A087C22866741F00AEB37C /* MaintenanceItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A087C12866741F00AEB37C /* MaintenanceItemsView.swift */; };
+		23A087C4286782A900AEB37C /* TroubleShootingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A087C3286782A900AEB37C /* TroubleShootingView.swift */; };
 		23A4CE1D2853CD3200B4FB9C /* PocketMaintananceV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE1C2853CD3200B4FB9C /* PocketMaintananceV2App.swift */; };
 		23A4CE1F2853CD3200B4FB9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE1E2853CD3200B4FB9C /* ContentView.swift */; };
 		23A4CE212853CD3500B4FB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A4CE202853CD3500B4FB9C /* Assets.xcassets */; };
@@ -16,11 +22,16 @@
 		23A4CE312853CE7E00B4FB9C /* MarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE302853CE7E00B4FB9C /* MarkView.swift */; };
 		23A4CE332853D06C00B4FB9C /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE322853D06C00B4FB9C /* ModelView.swift */; };
 		23A4CE352853D42800B4FB9C /* UserCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE342853D42800B4FB9C /* UserCarView.swift */; };
-		23A4CE372853D83A00B4FB9C /* LinkToUserCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE362853D83A00B4FB9C /* LinkToUserCarView.swift */; };
 		23A4CE3C2855117000B4FB9C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A4CE3B2855117000B4FB9C /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23A08794285FDE9C00AEB37C /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		23A087B7286535FF00AEB37C /* LifeHackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeHackView.swift; sourceTree = "<group>"; };
+		23A087BD2866730600AEB37C /* CheckBoxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxesView.swift; sourceTree = "<group>"; };
+		23A087BF2866738B00AEB37C /* ScrollableMileageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableMileageView.swift; sourceTree = "<group>"; };
+		23A087C12866741F00AEB37C /* MaintenanceItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceItemsView.swift; sourceTree = "<group>"; };
+		23A087C3286782A900AEB37C /* TroubleShootingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroubleShootingView.swift; sourceTree = "<group>"; };
 		23A4CE192853CD3200B4FB9C /* PocketMaintananceV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMaintananceV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE1C2853CD3200B4FB9C /* PocketMaintananceV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketMaintananceV2App.swift; sourceTree = "<group>"; };
 		23A4CE1E2853CD3200B4FB9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +42,6 @@
 		23A4CE302853CE7E00B4FB9C /* MarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkView.swift; sourceTree = "<group>"; };
 		23A4CE322853D06C00B4FB9C /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		23A4CE342853D42800B4FB9C /* UserCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCarView.swift; sourceTree = "<group>"; };
-		23A4CE362853D83A00B4FB9C /* LinkToUserCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToUserCarView.swift; sourceTree = "<group>"; };
 		23A4CE3B2855117000B4FB9C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +56,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A08793285FD7A500AEB37C /* UserCarView */ = {
+			isa = PBXGroup;
+			children = (
+				23A4CE342853D42800B4FB9C /* UserCarView.swift */,
+				23A4CE302853CE7E00B4FB9C /* MarkView.swift */,
+				23A4CE322853D06C00B4FB9C /* ModelView.swift */,
+			);
+			path = UserCarView;
+			sourceTree = "<group>";
+		};
+		23A087B6286535A100AEB37C /* NoteView */ = {
+			isa = PBXGroup;
+			children = (
+				23A08794285FDE9C00AEB37C /* NoteView.swift */,
+			);
+			path = NoteView;
+			sourceTree = "<group>";
+		};
+		23A087B92865360700AEB37C /* LifehackView */ = {
+			isa = PBXGroup;
+			children = (
+				23A087B7286535FF00AEB37C /* LifeHackView.swift */,
+			);
+			path = LifehackView;
+			sourceTree = "<group>";
+		};
+		23A087BC286672EE00AEB37C /* MileageView */ = {
+			isa = PBXGroup;
+			children = (
+				23A087BD2866730600AEB37C /* CheckBoxesView.swift */,
+				23A087BF2866738B00AEB37C /* ScrollableMileageView.swift */,
+				23A087C12866741F00AEB37C /* MaintenanceItemsView.swift */,
+			);
+			path = MileageView;
+			sourceTree = "<group>";
+		};
+		23A087C528678A9B00AEB37C /* TroubleShootingview */ = {
+			isa = PBXGroup;
+			children = (
+				23A087C3286782A900AEB37C /* TroubleShootingView.swift */,
+			);
+			path = TroubleShootingview;
+			sourceTree = "<group>";
+		};
 		23A4CE102853CD3200B4FB9C = {
 			isa = PBXGroup;
 			children = (
@@ -67,10 +121,11 @@
 			children = (
 				23A4CE1C2853CD3200B4FB9C /* PocketMaintananceV2App.swift */,
 				23A4CE1E2853CD3200B4FB9C /* ContentView.swift */,
-				23A4CE362853D83A00B4FB9C /* LinkToUserCarView.swift */,
-				23A4CE342853D42800B4FB9C /* UserCarView.swift */,
-				23A4CE302853CE7E00B4FB9C /* MarkView.swift */,
-				23A4CE322853D06C00B4FB9C /* ModelView.swift */,
+				23A087C528678A9B00AEB37C /* TroubleShootingview */,
+				23A087BC286672EE00AEB37C /* MileageView */,
+				23A087B92865360700AEB37C /* LifehackView */,
+				23A087B6286535A100AEB37C /* NoteView */,
+				23A08793285FD7A500AEB37C /* UserCarView */,
 				23A4CE2E2853CDD600B4FB9C /* Model */,
 				23A4CE2F2853CDE100B4FB9C /* Helper */,
 				23A4CE202853CD3500B4FB9C /* Assets.xcassets */,
@@ -178,11 +233,16 @@
 				23A4CE332853D06C00B4FB9C /* ModelView.swift in Sources */,
 				23A4CE352853D42800B4FB9C /* UserCarView.swift in Sources */,
 				23A4CE2B2853CD6200B4FB9C /* Model.swift in Sources */,
-				23A4CE372853D83A00B4FB9C /* LinkToUserCarView.swift in Sources */,
+				23A087BE2866730600AEB37C /* CheckBoxesView.swift in Sources */,
+				23A087C4286782A900AEB37C /* TroubleShootingView.swift in Sources */,
 				23A4CE2D2853CDA100B4FB9C /* DataManager.swift in Sources */,
+				23A087C22866741F00AEB37C /* MaintenanceItemsView.swift in Sources */,
+				23A087C02866738B00AEB37C /* ScrollableMileageView.swift in Sources */,
 				23A4CE312853CE7E00B4FB9C /* MarkView.swift in Sources */,
 				23A4CE1F2853CD3200B4FB9C /* ContentView.swift in Sources */,
+				23A087B8286535FF00AEB37C /* LifeHackView.swift in Sources */,
 				23A4CE1D2853CD3200B4FB9C /* PocketMaintananceV2App.swift in Sources */,
+				23A08795285FDE9C00AEB37C /* NoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,47 +10,48 @@ import SwiftUI
 struct ModelView: View {
     var carModel: [String] = []
     @State private var selection: Int = 0
-    @Binding var chosenUserCar: String?
-    @EnvironmentObject private var userManager: UserManager
+    @Binding var rootActive: Bool
+    
+   @AppStorage("chosenCar") var selectedCar: String = ""
+   @EnvironmentObject private var userCar: UserManager
     
     var body: some View {
+        ZStack {
+            Color(red: 17/255, green: 17/255, blue: 17/255, opacity: 1)
+                .ignoresSafeArea()
             VStack{
                 Picker(selection: $selection, label: Text("")) {
                     ForEach(0..<carModel.count, id: \.self) {index in
                         Text("\(carModel[index])")
+                            .foregroundColor(.white)
                             .font(.title)
+                            
                     }
                 }
                 .pickerStyle(.wheel)
                 
-                List {
-                    NavigationLink(destination: UserCarView(userCar: $chosenUserCar)){
-                        Button(action: saveCar){
-                           Text("Save")
-                        }
-                    }
+            
+                Button(action: saveCar){
+                    Text("Save")
                 }
             }
-            
-        
+        }
     }
     private func saveCar() {
-        let chosenCar = carModel[selection]
-        print(chosenCar)
-        chosenUserCar = chosenCar
-        UserDefaults.standard.set(chosenUserCar, forKey: "chosenCar")
+        rootActive = false
+        selectedCar = carModel[selection]
+        print(selectedCar)
+        userCar.chosenCar = selectedCar
+        print(userCar.chosenCar)
+        userCar.reloadView.toggle()
+        
     }
 }
 
-//extension ModelView {
-//    func saveCar() {
-//        let myCar = UserDefaults.standard.set(carModel, forKey: "chosenCar")
-//        print(myCar)
-//    }
-//}
 
 struct ModelView_Previews: PreviewProvider {
     static var previews: some View {
-        ModelView(chosenUserCar: .constant(""))
+        ModelView(rootActive: .constant(false))
+            .environmentObject(UserManager())
     }
 }

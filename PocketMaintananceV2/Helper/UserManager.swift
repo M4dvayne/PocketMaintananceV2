@@ -5,21 +5,11 @@
 //  Created by Вячеслав Кремнев on 11.06.2022.
 //
 
-import Foundation
+import Combine
+import SwiftUI
 
-final class UserManager: ObservableObject {
-    
-    @Published var user = User()
-    
-    init() {}
-    
-    init(user: User) {
-        self.user = user
-    }
-    
+class UserManager: ObservableObject {
+    @Published var reloadView: Bool = false
+    @AppStorage("myCar") var chosenCar: String = ""
 }
 
-
-struct User: Codable {
-    var userCar: String = ""
-}
