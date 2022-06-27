@@ -12,33 +12,39 @@ struct ScrollableMileageView: View {
     
     
     var body: some View {
-        ZStack{
+        ZStack(alignment: .leading){
             MaintenanceItemsView()
-            VStack {
+                .shadow(color: .gray, radius: 5, x: 6, y: 2)
+               .frame(width: 70, height: 520, alignment: .leading)
+            VStack() {
                 ScrollView([.horizontal], showsIndicators: false) {
-                    HStack(spacing: 20){
-                        Text("15 тыс.км")
-                        Text("30 тыс.км")
-                        Text("45 тыс.км")
-                        Text("60 тыс.км")
-                        Text("75 тыс.км")
-                        Text("90 тыс.км")
-                        Text("105 тыс.км")
-                        Text("120 тыс.км")
-                        Text("150 тыс.км")
+                    HStack(spacing: 47){
+                        Text("15k")
+                        Text("30k")
+                        Text("45k")
+                        Text("60k")
+                        Text("75k")
+                        Text("  90k")
+                        Text("105k")
+                        Text("120k")
+                        Text("150k")
                     }
-                    .offset(x: 10)
-                    .font(.callout)
+                 .shadow(color: .gray, radius: 5, x: 6, y: 2)
+                 .frame(width: 700, height: 20)
+                 .padding(.trailing, 100)
+                 .offset(x: 5, y: 5)
+                    
+                    
                     CheckBoxesView()
+                        .padding(.trailing, 100)
+                        .shadow(color: .gray, radius: 5, x: 6, y: 2)
+                     
                 }
-                
             }
             .offset(x: 80, y: 5)
         }
-        
     }
-       
-    }
+}
 
 
 struct MilleageView_Previews: PreviewProvider {

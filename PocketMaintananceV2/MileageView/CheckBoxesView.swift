@@ -40,6 +40,7 @@ struct Screen: View {
     }
     
     var body: some View {
+       
         LazyVGrid(columns: columns) {
             ForEach( (0..<90).indices, id:\.self ) { index in
                 HStack {
@@ -59,7 +60,6 @@ struct Screen: View {
                 .foregroundColor(checked ? Color(UIColor.systemBlue) : Color.secondary)
                 .onTapGesture{
                     self.checked.toggle()
-
                 }
         }
     }

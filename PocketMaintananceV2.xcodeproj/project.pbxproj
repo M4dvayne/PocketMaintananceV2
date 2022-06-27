@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				23A087BD2866730600AEB37C /* CheckBoxesView.swift */,
-				23A087BF2866738B00AEB37C /* ScrollableMileageView.swift */,
 				23A087C12866741F00AEB37C /* MaintenanceItemsView.swift */,
+				23A087BF2866738B00AEB37C /* ScrollableMileageView.swift */,
 			);
 			path = MileageView;
 			sourceTree = "<group>";

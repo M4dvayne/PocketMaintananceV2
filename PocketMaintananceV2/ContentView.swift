@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      //  NavigationView{
+    
         TabView{
             UserCarView()
                 .tabItem {
@@ -37,7 +37,7 @@ struct ContentView: View {
                     Text("My note")
                 }
         }
-   // }
+        
   }
 }
 
