@@ -8,10 +8,8 @@
 import Foundation
 import SwiftUI
 
-
 class DataManager {
     static let shared = DataManager()
-    
     
     let audi = "Audi"
     let bmw = "BMW"
@@ -84,5 +82,4 @@ class DataManager {
     let vazModel = ["Niva", "Granta", "Kalina", "Largus", "Priora", "Vesta", "XRAY"]
     
     init() {}
-    
 }

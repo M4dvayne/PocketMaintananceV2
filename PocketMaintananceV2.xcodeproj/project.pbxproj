@@ -127,7 +127,7 @@
 				23A087B6286535A100AEB37C /* NoteView */,
 				23A08793285FD7A500AEB37C /* UserCarView */,
 				23A4CE2E2853CDD600B4FB9C /* Model */,
-				23A4CE2F2853CDE100B4FB9C /* Helper */,
+				23A4CE2F2853CDE100B4FB9C /* Helpers */,
 				23A4CE202853CD3500B4FB9C /* Assets.xcassets */,
 				23A4CE222853CD3500B4FB9C /* Preview Content */,
 			);
@@ -150,13 +150,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		23A4CE2F2853CDE100B4FB9C /* Helper */ = {
+		23A4CE2F2853CDE100B4FB9C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				23A4CE2C2853CDA100B4FB9C /* DataManager.swift */,
 				23A4CE3B2855117000B4FB9C /* UserManager.swift */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

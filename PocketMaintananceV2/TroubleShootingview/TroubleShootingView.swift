@@ -10,11 +10,13 @@ import SwiftUI
 struct TroubleShootingView: View {
     
     let troubles = Troubles.getTroubles()
-        var body: some View {
-            List(troubles, children: \.troubles) { trouble in
-                Text(trouble.title ?? "")
-            }
+    
+    var body: some View {
+        List(troubles, children: \.troubles) { trouble in
+            Text(trouble.title ?? "")
+                .shadow(color: .gray, radius: 5, x: 6, y: 2)
         }
+    }
 }
 
 struct TroubleShootingView_Previews: PreviewProvider {

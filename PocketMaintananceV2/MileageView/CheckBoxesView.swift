@@ -13,6 +13,7 @@ struct CheckBoxesView: View {
     }
 }
 
+
 struct CheckBoxesView_Previews: PreviewProvider {
     static var previews: some View {
         CheckBoxesView()
@@ -40,26 +41,26 @@ struct Screen: View {
     }
     
     var body: some View {
-       
         LazyVGrid(columns: columns) {
             ForEach( (0..<90).indices, id:\.self ) { index in
                 HStack {
-                    CheckBoxView(checked: $checked[index])
+                    CheckBoxView(selectedBox: $checked[index])
                 }
             }
         }
     }
-        
+    
     
     struct CheckBoxView: View {
-        @Binding var checked: Bool
+        
+        @Binding var selectedBox: Bool
         
         var body: some View {
-         Image(systemName: checked ? "checkmark.square.fill" : "square")
+            Image(systemName: selectedBox ? "checkmark.square.fill" : "square")
                 .padding(12)
-                .foregroundColor(checked ? Color(UIColor.systemBlue) : Color.secondary)
+                .foregroundColor(selectedBox ? Color(UIColor.systemBlue) : Color.secondary)
                 .onTapGesture{
-                    self.checked.toggle()
+                    self.selectedBox.toggle()
                 }
         }
     }

@@ -14,7 +14,10 @@ struct LifeHackView: View {
         List(lifeHacksInfo, children: \.lifeHacks) {lifeHack in
             Image(systemName: lifeHack.icon ?? "")
                 .renderingMode(.original)
+                .shadow(color: .gray, radius: 5, x: 6, y: 2)
+            
             Text(lifeHack.title ?? "")
+                .shadow(color: .gray, radius: 5, x: 6, y: 2)
         }
     }
 }

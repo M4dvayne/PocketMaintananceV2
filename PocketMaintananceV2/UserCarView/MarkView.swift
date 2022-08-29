@@ -8,25 +8,22 @@
 import SwiftUI
 
 struct MarkView: View {
- //обязательно для инициализации
-    let cars: [Car]!
+    
     @Binding var rootActive: Bool
-
+    let cars: [Car]!
     
     var body: some View {
-            List(cars) { car in
-                //передал массив на другой экран
-                NavigationLink(destination: ModelView(carModel: car.carModel, rootActive: $rootActive)){
+        List(cars) { car in
+            NavigationLink(destination: ModelView(rootActive: $rootActive, carModel: car.carModel)){
                 Text("\(car.carMark)")
-                }
-                .shadow(color: .gray, radius: 6, x: 4, y: 2)
             }
-            
+            .shadow(color: .gray, radius: 6, x: 4, y: 2)
+        }
     }
 }
 
 struct MarkView_Previews: PreviewProvider {
     static var previews: some View {
-        MarkView(cars: Car.carList(), rootActive: .constant(false))
+        MarkView(rootActive: .constant(false), cars: Car.carList())
     }
 }

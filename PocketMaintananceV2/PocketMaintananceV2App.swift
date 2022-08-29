@@ -8,13 +8,13 @@
 import SwiftUI
 
 @main
-struct PocketMaintananceV2App: App {
+struct PocketMaintananceV2App: App{
     
     @StateObject private var userCar = UserManager()
     
     var body: some Scene {
         WindowGroup {
-           
+            
             ContentView()
                 .environmentObject(userCar)
         }

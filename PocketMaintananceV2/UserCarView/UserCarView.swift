@@ -8,23 +8,21 @@
 import SwiftUI
 
 struct UserCarView: View {
-    //первичные данные
-    let cars = Car.carList()
     
     @State private var isActive: Bool = false
     @EnvironmentObject private var userCar: UserManager
     
+    let cars = Car.carList()
+    
     var body: some View {
-        
         NavigationView {
             VStack(alignment: .leading, spacing: 50) {
                 NavigationLink(
-                    destination: MarkView(cars: cars, rootActive: $isActive),
+                    destination: MarkView(rootActive: $isActive, cars: cars),
                     isActive: $isActive){
                         Text("Add Car")
                             .shadow(color: .gray, radius: 5, x: 6, y: 2)
                     }
-                
                 
                 VStack {
                     Image("autoDr")
@@ -39,12 +37,10 @@ struct UserCarView: View {
                     Text("Engine oil")
                     Text("Fuel type")
                     Text("Transmission oil")
-                    //Text("Note")
                 }
                 .foregroundColor(.black)
                 .shadow(color: .gray, radius: 5, x: 6, y: 2)
             }
-            
             .navigationBarHidden(true)
         }
     }

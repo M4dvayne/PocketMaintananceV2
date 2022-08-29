@@ -9,7 +9,7 @@ import Combine
 import SwiftUI
 
 class UserManager: ObservableObject {
-    @Published var reloadView: Bool = false
+    @AppStorage("isChecked") var chosenBox: Bool = false
     @AppStorage("myCar") var chosenCar: String = ""
 }
 
